@@ -11,15 +11,17 @@ const Content = ({ title, body }) => {
     <div className="text-left gap-11  py-12 px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2  bg-yellow-500 rounded-3xl mt-2">
       <div className="">
         <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>
-        <p className="mt-4 text-base text-gray-600">
+        <p className="mt-4 text-2xl text-black">
           {body}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
           beatae? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Error, beatae?
+          Error, beatae?kjjLorem ipsum dolor sit amet consectetur adipisicing
+          elit. Error, beatae? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Error, beatae?
         </p>
 
         {!tablet && (
-          <button className="border-2 rounded-full border-black border-solid mt-8 py-5 px-11 text-lg font-semibold text-black uppercase transition-colors duration-200 transform bg-red-600 rounded-lg shadow-xl hover:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+          <button className="border-2 rounded-full border-black border-solid mt-8 py-5 px-11 text-sm font-semibold text-black uppercase transition-colors duration-200 transform bg-red-600 rounded-lg shadow-xl hover:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
             Discover Product
           </button>
         )}

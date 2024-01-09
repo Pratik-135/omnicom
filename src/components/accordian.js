@@ -27,7 +27,10 @@ const Accordion = () => {
               <div class="grid grid-rows-1 grid-flow-col gap-6">
                 <div>
                   <div className="flex items-center ">
-                    <img src="/card-1.svg"></img>Accordion title {tab}
+                    <img src="/card-1.svg"></img>
+                    <p className="text-lg font-semibold pl-4">
+                      Accordion title {tab}
+                    </p>
                   </div>
                 </div>
 
@@ -41,7 +44,7 @@ const Accordion = () => {
             </button>
             {activeTab === index && (
               <div className="w-full p-4 bg-yellow-500 rounded-lg">
-                <p className="text-sm">
+                <p className="text-xl">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Quisque sagittis eu libero eget pulvinar. Cras posuere ligula
                   vel efficitur ullamcorper.

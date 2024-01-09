@@ -15,64 +15,71 @@ const Tab = () => {
     : "!absolute bottom-0 w-full left-0 translate-y-[100%]";
 
   return (
-    <div className="relative">
-      <div className="grid gap-4 lg:grid-cols-4">
+    <div className="relative ">
+      <div className="  grid gap-4 lg:grid-cols-4">
         <div
           onClick={() => {
             setActiveTab([true, false, false, false]);
           }}
         >
-          <Card src={"./card-1.svg"} active={activeTab[0]} />
-
-          {activeTab[0] && (
-            <div className={classNames(abs)}>
-              <div>
-                <Content title="Product 1" body="kjj" />
+          <div className="border-slate-100 rounded border-2 borlder-solid">
+            <Card src={"./card-1.svg"} active={activeTab[0]} />
+            {activeTab[0] && (
+              <div className={classNames(abs)}>
+                <div>
+                  <Content title="Product 1" body="kjj" />
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
         <div
           onClick={() => {
             setActiveTab([false, true, false, false]);
           }}
         >
-          <Card src={"./card-2.svg"} active={activeTab[1]} />
-          {activeTab[1] && (
-            <div className={classNames(abs)}>
-              <div>
-                <Content title="Product 2" body="" />
+          <div className="border-slate-100 rounded-xl border-2 borlder-solid">
+            <Card src={"./card-2.svg"} active={activeTab[1]} />
+            {activeTab[1] && (
+              <div className={classNames(abs)}>
+                <div>
+                  <Content title="Product 2" body="kjj" />
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
         <div
           onClick={() => {
             setActiveTab([false, false, true, false]);
           }}
         >
-          <Card src={"./card-3.svg"} active={activeTab[2]} />
-          {activeTab[2] && (
-            <div className={classNames(abs)}>
-              <div>
-                <Content title="Product 3" body="" />
+          <div className="border-slate-100 rounded-xl border-2 borlder-solid">
+            <Card src={"./card-3.svg"} active={activeTab[2]} />
+            {activeTab[2] && (
+              <div className={classNames(abs)}>
+                <div>
+                  <Content title="Product 3" body="kjj" />
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
         <div
           onClick={() => {
             setActiveTab([false, false, false, true]);
           }}
         >
-          <Card src={"./card-4.svg"} active={activeTab[3]} />
-          {activeTab[3] && (
-            <div className={classNames(abs)}>
-              <div>
-                <Content title="Product 4" body="" />
+          <div className="border-slate-100 rounded-xl border-2 borlder-solid">
+            <Card src={"./card-4.svg"} active={activeTab[3]} />
+            {activeTab[3] && (
+              <div className={classNames(abs)}>
+                <div>
+                  <Content title="Product 4" body="" />
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     </div>

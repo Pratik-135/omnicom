@@ -45,8 +45,8 @@ const card = ({ active, src }) => {
         </div>
       ) : (
         <>
-          <div class=" bg-yellow-500 shadow-lg overflow-hidden w-full">
-            <div class="w-full bg-white text-gray-700 font-semibold py-4 flex justify-between">
+          <div class=" box-content  bg-yellow-500   rounded-xl  overflow-hidden w-full">
+            <div class="w-full  bg-white text-gray-700 font-semibold py-6 px-8 flex justify-between">
               <img src={src} />
               <h1 className="py-2 text-xl font-semibold"> Card title</h1>
               <div className="py-4 px-8">{<Plus />}</div>
