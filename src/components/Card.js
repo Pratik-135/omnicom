@@ -13,12 +13,12 @@ const card = ({ active, src }) => {
       {!tablet ? (
         <div
           className={classNames(
-            "border text-left rounded-md overflow-hidden relative group cursor-pointer grid justify-start"
+            "border text-left rounded-xl overflow-hidden relative group cursor-pointer grid justify-start"
           )}
         >
           <div className="p-6 pb-0">
             <div>
-              <h5 className=" flex justify-between text-xl leading-6 font-semibold grow line-clamp-2 pb-4 ">
+              <h5 className="  flex justify-between  px-6 sm:gap-x-6  text-xl leading-6 font-semibold grow line-clamp-2 pb-4 ">
                 Card Title
                 <img src={src} />
               </h5>
@@ -31,7 +31,7 @@ const card = ({ active, src }) => {
           <button className=" relative  w-fit mt-2.5 ">
             <span
               className={` bg-slate-100 h-full flex gap-4 items-center w-full h-full group-hover:bg-yellow-500 px-6 z-50 relative py-4 rounded-tr-3xl group-hover:translate-y-[-6px] ${
-                active ? " !bg-yellow-500 !a translate-y-[-6px] " : ""
+                active ? " !bg-amber-500 ! translate-y-[-6px] " : ""
               }`}
             >
               Discover <ArrowDown />
@@ -45,11 +45,17 @@ const card = ({ active, src }) => {
         </div>
       ) : (
         <>
-          <div class=" box-content  bg-yellow-500   rounded-xl  overflow-hidden w-full">
-            <div class="w-full  bg-white text-gray-700 font-semibold py-6 px-8 flex justify-between">
-              <img src={src} />
-              <h1 className="py-2 text-xl font-semibold"> Card title</h1>
-              <div className="py-4 px-8">{<Plus />}</div>
+          <div
+            className={`border-solid ${
+              active ? "" : "border-b-8"
+            } border-yellow-600 bg-amber-200 rounded-xl overflow-hidden w-full`}
+          >
+            <div className="w-full bg-white text-gray-700 font-semibold py-6 px-8 flex justify-between">
+              <img src={src} alt="Card Image" />
+              <h1 className="py-2 text-2xl font-semibold">Card title</h1>
+              <div className="py-4 px-8">
+                {active} <Plus />
+              </div>
             </div>
           </div>
         </>

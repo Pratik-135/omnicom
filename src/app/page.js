@@ -12,10 +12,10 @@ export default function Home() {
         <div className=" text-4xl font-semibold text-center mb-2">
           <h1>Section Title</h1>
         </div>
-        <div className="  font-medium text-lg  text-center mb-4">
+        <div className="font-medium text-lg  text-center  mt-4 mb-8">
           <h1>Sub Section Title</h1>
-          <Tab />
         </div>
+        <Tab />
       </div>
     </>
   );

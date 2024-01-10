@@ -16,18 +16,18 @@ const Tab = () => {
 
   return (
     <div className="relative ">
-      <div className="  grid gap-4 lg:grid-cols-4">
+      <div className=" grid gap-4 lg:grid-cols-4">
         <div
           onClick={() => {
             setActiveTab([true, false, false, false]);
           }}
         >
-          <div className="border-slate-100 rounded border-2 borlder-solid">
+          <div className="border-slate-100  rounded-3xl border-2 border-solid">
             <Card src={"./card-1.svg"} active={activeTab[0]} />
             {activeTab[0] && (
               <div className={classNames(abs)}>
-                <div>
-                  <Content title="Product 1" body="kjj" />
+                <div className="text-5xl">
+                  <Content title="Product 1 " body="kjj" />
                 </div>
               </div>
             )}
@@ -38,12 +38,12 @@ const Tab = () => {
             setActiveTab([false, true, false, false]);
           }}
         >
-          <div className="border-slate-100 rounded-xl border-2 borlder-solid">
+          <div className="border-slate-100  rounded-3xl border-2 border-solid">
             <Card src={"./card-2.svg"} active={activeTab[1]} />
             {activeTab[1] && (
               <div className={classNames(abs)}>
-                <div>
-                  <Content title="Product 2" body="kjj" />
+                <div className="text-5xl">
+                  <Content title="Product 2 " body="kjj" />
                 </div>
               </div>
             )}
@@ -54,11 +54,11 @@ const Tab = () => {
             setActiveTab([false, false, true, false]);
           }}
         >
-          <div className="border-slate-100 rounded-xl border-2 borlder-solid">
+          <div className="border-slate-100 rounded-3xl border-2 border-solid">
             <Card src={"./card-3.svg"} active={activeTab[2]} />
             {activeTab[2] && (
               <div className={classNames(abs)}>
-                <div>
+                <div className="text-5xl ">
                   <Content title="Product 3" body="kjj" />
                 </div>
               </div>
@@ -70,11 +70,11 @@ const Tab = () => {
             setActiveTab([false, false, false, true]);
           }}
         >
-          <div className="border-slate-100 rounded-xl border-2 borlder-solid">
+          <div className="border-slate-100 rounded-3xl border-2 borlder-solid">
             <Card src={"./card-4.svg"} active={activeTab[3]} />
             {activeTab[3] && (
               <div className={classNames(abs)}>
-                <div>
+                <div className="text-5xl">
                   <Content title="Product 4" body="" />
                 </div>
               </div>

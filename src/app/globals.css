@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .custom-padding-top {
+      padding-top: 22px; /* Replace with your desired padding value */
+    }
+    .custom-padding-bottom {
+        padding-bottom: 22px; /* Replace with your desired padding value */
+      }
+}
